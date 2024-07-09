@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="foret.jpg" alt="Forêt embrumée">
+        <h1>La forêt m'appelle</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form method="post" action="page.php"></form>
+        <fieldset>
+            <legend>Entendez l'appel de la forêt</legend>
+            <div>
+                <label for="input_nom">Nom <span>*</span>:</label>
+                <input type="text" name="nom" id="input_nom" placeholder="Ex: Sarah" minlength="2" maxlength="20" required>
+            </div>
+            <div>
+                <label for="input_email">Email <span>*</span>:</label>
+                <input type="text" name="email" id="input_email" placeholder="Ex: sarah.connor@mail.com" required>
+            </div>
+            <div>
+                <label for="input_com">Laisser un commentaire:</label>
+                <br>
+                <textarea name="commentaire" id="input_com" rows="10" cols="70" placeholder="Ex: Quand j'entends souffler le vent, je sais d'où je viens."></textarea>
+            </div>
+            <div>
+                <label for="input_copie">Envoyer une copie</label>
+                <br>
+                <input type="checkbox" name="copie" checked>
+                <input id="input_copie" type="file"/>
+            </div>
+            <div>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Reset">
+            </div>
+        </fieldset>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="#">Page fictive</a></li>
+            <li><a href="#">Page fictive</a></li>
+            <li><a href="#">Page fictive</a></li>
+            <li><a href="#">Page fictive</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
